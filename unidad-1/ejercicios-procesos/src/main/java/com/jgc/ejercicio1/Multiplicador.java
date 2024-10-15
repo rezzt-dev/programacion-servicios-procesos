@@ -3,13 +3,13 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 
-package com.psp.ejercicio1;
+package com.jgc.ejercicio1;
 
 /**
  * 
  * @author JGC by Juan Garcia Cazallas
  * version 1.0
- * created on 19 sept 2024
+ * created on 14 oct 2024
  */
 public class Multiplicador {
   public static int multiplicar (int num1, int num2) {
@@ -25,5 +25,5 @@ public class Multiplicador {
     } else {
       System.out.println("Please provide two numbers as arguments.");
     }
-  }
+  } 
 }
