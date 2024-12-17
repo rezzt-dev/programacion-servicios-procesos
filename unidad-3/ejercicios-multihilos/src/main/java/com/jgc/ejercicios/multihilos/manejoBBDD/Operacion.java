@@ -1,16 +1,8 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
-package com.jgc.ejercicios.multihilos.servidorBBDD;
+package com.jgc.ejercicios.multihilos.manejoBBDD;
 
-import com.jgc.ejercicios.multihilos.servidorBBDD.manage.Empleado;
+import java.io.Serializable;
 
-/**
- *
- * @author rezzt
- */
-public class Operacion {
+public class Operacion implements Serializable {
   public enum Metodo {
     CREAR, CONSULTAR_ALL, CONSULTAR_EMPLEADO
   }
