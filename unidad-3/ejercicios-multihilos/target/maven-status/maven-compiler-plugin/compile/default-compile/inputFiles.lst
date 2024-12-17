@@ -1,0 +1,16 @@
+/home/rezzt/Documentos/github-data/personal-data/programacion-servicios-procesos/unidad-3/ejercicios-multihilos/src/main/java/com/jgc/ejercicios/multihilos/EjerciciosMultihilos.java
+/home/rezzt/Documentos/github-data/personal-data/programacion-servicios-procesos/unidad-3/ejercicios-multihilos/src/main/java/com/jgc/ejercicios/multihilos/contestarPreguntas/Cliente.java
+/home/rezzt/Documentos/github-data/personal-data/programacion-servicios-procesos/unidad-3/ejercicios-multihilos/src/main/java/com/jgc/ejercicios/multihilos/contestarPreguntas/ManageCliente.java
+/home/rezzt/Documentos/github-data/personal-data/programacion-servicios-procesos/unidad-3/ejercicios-multihilos/src/main/java/com/jgc/ejercicios/multihilos/contestarPreguntas/Servidor.java
+/home/rezzt/Documentos/github-data/personal-data/programacion-servicios-procesos/unidad-3/ejercicios-multihilos/src/main/java/com/jgc/ejercicios/multihilos/exceptions/IllegalOrphanException.java
+/home/rezzt/Documentos/github-data/personal-data/programacion-servicios-procesos/unidad-3/ejercicios-multihilos/src/main/java/com/jgc/ejercicios/multihilos/exceptions/NonexistentEntityException.java
+/home/rezzt/Documentos/github-data/personal-data/programacion-servicios-procesos/unidad-3/ejercicios-multihilos/src/main/java/com/jgc/ejercicios/multihilos/exceptions/PreexistingEntityException.java
+/home/rezzt/Documentos/github-data/personal-data/programacion-servicios-procesos/unidad-3/ejercicios-multihilos/src/main/java/com/jgc/ejercicios/multihilos/servidorBBDD/Cliente.java
+/home/rezzt/Documentos/github-data/personal-data/programacion-servicios-procesos/unidad-3/ejercicios-multihilos/src/main/java/com/jgc/ejercicios/multihilos/servidorBBDD/ManageClient.java
+/home/rezzt/Documentos/github-data/personal-data/programacion-servicios-procesos/unidad-3/ejercicios-multihilos/src/main/java/com/jgc/ejercicios/multihilos/servidorBBDD/Operacion.java
+/home/rezzt/Documentos/github-data/personal-data/programacion-servicios-procesos/unidad-3/ejercicios-multihilos/src/main/java/com/jgc/ejercicios/multihilos/servidorBBDD/Servidor.java
+/home/rezzt/Documentos/github-data/personal-data/programacion-servicios-procesos/unidad-3/ejercicios-multihilos/src/main/java/com/jgc/ejercicios/multihilos/servidorBBDD/manage/Empleado.java
+/home/rezzt/Documentos/github-data/personal-data/programacion-servicios-procesos/unidad-3/ejercicios-multihilos/src/main/java/com/jgc/ejercicios/multihilos/servidorBBDD/manage/EmpleadoJpaController.java
+/home/rezzt/Documentos/github-data/personal-data/programacion-servicios-procesos/unidad-3/ejercicios-multihilos/src/main/java/com/jgc/ejercicios/multihilos/sumaAscii/Cliente.java
+/home/rezzt/Documentos/github-data/personal-data/programacion-servicios-procesos/unidad-3/ejercicios-multihilos/src/main/java/com/jgc/ejercicios/multihilos/sumaAscii/Peticion.java
+/home/rezzt/Documentos/github-data/personal-data/programacion-servicios-procesos/unidad-3/ejercicios-multihilos/src/main/java/com/jgc/ejercicios/multihilos/sumaAscii/Servidor.java
