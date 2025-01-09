@@ -3,7 +3,6 @@
   <persistence-unit name="com.jgc_ejercicios-multihilos_jar_1.0-SNAPSHOTPU" transaction-type="RESOURCE_LOCAL">
     <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
     <class>com.jgc.ejercicios.multihilos.servidorBBDD.manage.Empleado</class>
-    <class>com.jgc.ejercicios.multihilos.servidorBBDD.model.Empleado</class>
     <properties>
       <property name="javax.persistence.jdbc.url" value="jdbc:oracle:thin:@//localhost:1521/FREEPDB1"/>
       <property name="javax.persistence.jdbc.user" value="empresapsp"/>

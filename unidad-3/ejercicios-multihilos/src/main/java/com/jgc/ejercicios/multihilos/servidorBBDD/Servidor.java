@@ -13,20 +13,21 @@ import java.net.Socket;
  * @author rezzt
  */
 public class Servidor {
-  private static final int PUERTO = 9876;
-  
   public static void main(String[] args) {
-    try (ServerSocket serverSocket = new ServerSocket(PUERTO)) {
-      System.out.println(" > Servidor fucionando... Puerto: " + PUERTO);
+    int port = 9876;
+    
+    try (ServerSocket servidor = new ServerSocket(port)) {
+      System.out.println(" - Servidor encendido. Puerto: " + port);
       
       while (true) {
-        Socket clientSocket = serverSocket.accept();
-        System.out.println("  - Conexion establecida con el servidor.");
+        Socket peticion = servidor.accept();
+        System.out.println("  - Conexion establecida con el cliente.");
         
-        new ManejoClientes(clientSocket).start();
+        new ManageCliente(peticion).start();
       }
+      
     } catch (IOException ex) {
-      ex.printStackTrace();
+      System.err.println(" !Error al levantar la conexion del servidor.");
     }
   }
 }
