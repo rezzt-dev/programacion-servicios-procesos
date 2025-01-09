@@ -41,7 +41,7 @@ public class ManageCliente extends Thread {
         returnResponse = "lisboa";
         break;
 
-      case "¿quien es don quijote de la mancha?":
+      case "¿quien escribio don quijote de la mancha?":
         returnResponse = "miguel de cervantes";  
         break;
 

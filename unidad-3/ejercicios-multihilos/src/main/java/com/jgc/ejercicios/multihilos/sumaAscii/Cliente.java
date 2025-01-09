@@ -10,6 +10,8 @@ import java.io.InputStreamReader;
 import java.io.PrintWriter;
 import java.net.Socket;
 import java.util.Scanner;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 /**
  *
@@ -25,27 +27,26 @@ public class Cliente {
          PrintWriter out = new PrintWriter(socket.getOutputStream(), true);
          Scanner scanner = new Scanner(System.in);
     ) {
-      System.out.println(" > Conectando al servidor.");
-      
-      System.out.println("  - Ingresa el numero de palabras: ");
-      int numLines = scanner.nextInt();
-      scanner.nextLine();
-      
-      out.print(numLines);
-      
-      for (int i=0; i < numLines; i++) {
-        System.out.println("   + Ingresa una palabra: ");
-        String palabra = scanner.nextLine();
-        out.print(palabra);
-      }
-      
-      for (int i=0; i < numLines; i++) {
-        String response = in.readLine();
-        System.out.println(response);
-      }
+      enviarCadena(in, out);
       
     } catch (IOException ex) {
       System.err.println("  - Error en el cliente: " + ex.getMessage());
+    }
+  }
+  
+  private static void enviarCadena (BufferedReader entrada, PrintWriter salida) {
+    try {
+      salida.println(2);
+      salida.println("ABC");
+      salida.println("ZZ");
+      salida.flush();
+      
+      String suma1 = entrada.readLine();
+      System.out.println(suma1);
+      String suma2 = entrada.readLine();
+      System.out.println(suma2);
+    } catch (IOException ex) {
+      Logger.getLogger(Cliente.class.getName()).log(Level.SEVERE, null, ex);
     }
   }
 }
