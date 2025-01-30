@@ -22,7 +22,7 @@ public class MaquinaRefrescos {
     try (ServerSocket serverSocket = new ServerSocket(PUERTO)) {
       System.out.println(" - Servidor en funcionamiento. Puerto utilizado: " + PUERTO);
       
-      while (true) {
+      while (bebidasTotales > 0) {
         Socket peticionCliente = serverSocket.accept();
         new ManejoPeticion(peticionCliente).start();
       }
