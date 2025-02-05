@@ -1,22 +1,15 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
-
 package com.jgc.proyecto.ftp.ejemplos;
 
+import java.io.FileInputStream;
 import java.io.IOException;
+
+import org.apache.commons.net.ftp.FTP;
 import org.apache.commons.net.ftp.FTPClient;
 
-/**
- *
- * @author JGC by Juan Garcia Cazallas
- * @version 1.0
- * Created on 30 ene 2025
- */
-public class FTPExample {
+public class SubidaFicheroFTP {
   public static void main(String[] args) throws IOException {
     FTPClient clienteFTP = null;
+    FileInputStream inputStream = null;
     
     try {
        // establecer una nueva conexion con el servidor FTP ->
@@ -27,6 +20,15 @@ public class FTPExample {
         
          // usar el modo pasivo ->
         clienteFTP.enterLocalActiveMode();
+        clienteFTP.setFileType(FTP.ASCII_FILE_TYPE);
+        inputStream = new FileInputStream("prueba.txt");
+        boolean done = clienteFTP.storeFile("/prueba.txt", inputStream);
+
+        if (done) {
+          System.out.println(" > el archivo se ha enviado correctamente.");
+        } else {
+          System.out.println("el archivo no se ha enviado");
+        }
       } else {
         System.out.println(" -> login fallido");
       }
@@ -34,6 +36,11 @@ public class FTPExample {
       ex.printStackTrace();
       throw ex;
     } finally {
+      try {
+        if (null != inputStream) {
+          inputStream.close();
+        }
+      } catch(IOException ex) {}
       try {
         if (clienteFTP.isConnected()) {
           clienteFTP.logout();
